@@ -1,5 +1,5 @@
 import re
-import getpass 
+import getpass
 
 RULES = [
     ("length", "Password length must be between 8 and 32 characters"),
@@ -10,6 +10,7 @@ RULES = [
 ]
 
 SPECIAL_CHARS = r"@#$%^&+="
+
 
 def check_password(password: str):
     """
@@ -47,6 +48,7 @@ def check_password(password: str):
     is_valid = len(failures) == 0
     return is_valid, failures, score
 
+
 def strength_from_score(score: int):
     """Map numeric score to strength label"""
     # score range: 0..6
@@ -55,6 +57,7 @@ def strength_from_score(score: int):
     if score <= 4:
         return "Medium"
     return "Strong"
+
 
 def interactive_mode():
     print("Password rules:")
@@ -86,6 +89,7 @@ def interactive_mode():
             for f in failures:
                 print(" -", f)
             print("\nTry again or type 'quit' to stop.\n")
+
 
 if __name__ == "__main__":
     interactive_mode()

@@ -1,7 +1,7 @@
 def calculate_grade(avg):
     if avg >= 90:
         return "A \n Excellent"
-    elif avg >= 75: 
+    elif avg >= 75:
         return "B \n Very Good"
     elif avg >= 60:
         return "C \n Good"
@@ -10,8 +10,9 @@ def calculate_grade(avg):
     else:
         return "F \n Fail"
 
+
 marks = []
-subjects =  int(input("enter the number of subjects: "))
+subjects = int(input("enter the number of subjects: "))
 
 for i in range(subjects):
     m = float(input(f"Enter marks for subject {i+1}: "))
@@ -20,6 +21,6 @@ for i in range(subjects):
 average = total / subjects
 grade = calculate_grade(average)
 print("Marks entered:", marks)
-print("Total : ",total)
-print("Average: ",average)
-print("Grade: ",grade)
+print("Total : ", total)
+print("Average: ", average)
+print("Grade: ", grade)
