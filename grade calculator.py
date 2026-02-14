@@ -1,7 +1,7 @@
 def calculate_grade(avg):
     if avg >= 90:
         return "A \n Excellent"
-    elif avg >= 75:
+    elif avg >= 75: 
         return "B \n Very Good"
     elif avg >= 60:
         return "C \n Good"
