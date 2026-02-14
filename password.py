@@ -1,5 +1,5 @@
 import re
-import getpass
+import getpass 
 
 RULES = [
     ("length", "Password length must be between 8 and 32 characters"),
