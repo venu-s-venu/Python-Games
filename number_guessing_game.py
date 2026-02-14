@@ -5,11 +5,11 @@ while True:
     try:
         guess = int(input("GUESS THE NUMBER BETWEEN 1 TO 100 : "))
         if guess > number: 
-            print("Too High!")
+            print("Too High! ⬆️")
         elif guess < number:
-            print("Too Low!")
+            print("Too Low! ⬇️")
         else:
-            print("Congratulations! You guess the number.")
+            print("Congratulations! You guess the number. 😁")
             print(number)
             break
     except ValueError:
