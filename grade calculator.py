@@ -5,7 +5,7 @@ def calculate_grade(avg):
         return "B \n Very Good"
     elif avg >= 60:
         return "C \n Good"
-    elif avg >= 40:
+    elif avg >= 40: 
         return "D \n Pass"
     else:
         return "F \n Fail"
